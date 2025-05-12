@@ -33,7 +33,7 @@ st.markdown(
 )
 
 # Área principal
-st.title("🌐 Dashboard Principal")
+#st.title("🌐 Dashboard Principal")
 
 if seleccion == "Inicio":
     st.subheader("Bienvenido al Dashboard")
