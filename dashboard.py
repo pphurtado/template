@@ -5,11 +5,11 @@ st.set_page_config(page_title="Dashboard Demo", layout="wide")
 
 # Menú lateral (tipo hamburguesa)
 with st.sidebar:
-    st.title("Menú")
-    seleccion = st.radio("Ir a:", ["Inicio", "Visualización", "Configuración"])
+    st.title("Home")
+    seleccion = st.radio("Ir a:", ["Home", "View", "Settings"])
     st.markdown("---")
     st.write("Opciones adicionales")
-    if seleccion == "Configuración":
+    if seleccion == "Settins":
         opcion_extra = st.checkbox("Activar modo avanzado")
 #Para Cargar Loto
 import base64
