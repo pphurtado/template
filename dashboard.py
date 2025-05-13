@@ -9,7 +9,7 @@ with st.sidebar:
     seleccion = st.radio("Ir a:", ["Home", "View", "Settings"])
     st.markdown("---")
     st.write("Opciones adicionales")
-    if seleccion == "Settins":
+    if seleccion == "Settings":
         opcion_extra = st.checkbox("Activar modo avanzado")
 #Para Cargar Loto
 import base64
