@@ -11,6 +11,7 @@ with st.sidebar:
     st.write("Opciones adicionales")
     if seleccion == "Settings":
         opcion_extra = st.checkbox("Activar modo avanzado")
+        st.markdown("aquí pego el primer control")
 #Para Cargar Loto
 import base64
 
