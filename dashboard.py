@@ -3,15 +3,6 @@ import streamlit as st
 # Configuración de la página
 st.set_page_config(page_title="Dashboard Demo", layout="wide")
 
-# Menú lateral (tipo hamburguesa)
-with st.sidebar:
-    st.title("Home")
-    seleccion = st.radio("Ir a:", ["Home", "View", "Settings"])
-    st.markdown("---")
-    st.write("Opciones adicionales")
-    if seleccion == "Settings":
-        opcion_extra = st.checkbox("Activar modo avanzado")
-        st.markdown("aquí pego el primer control")
 #Para Cargar Loto
 import base64
 
@@ -32,6 +23,16 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
+# Menú lateral (tipo hamburguesa)
+with st.sidebar:
+    st.title("Home")
+    seleccion = st.radio("Ir a:", ["Home", "View", "Settings"])
+    st.markdown("---")
+    st.write("Opciones adicionales")
+    if seleccion == "Settings":
+        opcion_extra = st.checkbox("Activar modo avanzado")
+        st.markdown("aquí pego el primer control")
 
 # Área principal
 #st.title("🌐 Dashboard Principal")
