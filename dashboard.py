@@ -35,11 +35,11 @@ st.markdown(
 # Área principal
 #st.title("🌐 Dashboard Principal")
 
-if seleccion == "Inicio":
+if seleccion == "Home":
     st.subheader("Bienvenido al Dashboard")
     st.write("Selecciona una opción del menú para comenzar.")
 
-elif seleccion == "Visualización":
+elif seleccion == "View":
     st.subheader("📊 Visualización de Datos")
     st.write("Aquí podrías insertar un gráfico, tabla o resultado.")
     # Ejemplo con gráfico
@@ -54,8 +54,8 @@ elif seleccion == "Visualización":
     chart = alt.Chart(df).mark_line().encode(x="x", y="y")
     st.altair_chart(chart, use_container_width=True)
 
-elif seleccion == "Configuración":
-    st.subheader("⚙️ Configuración")
+elif seleccion == "Settings":
+    st.subheader("⚙️ Settings")
     st.write("Ajusta los parámetros según tus necesidades.")
     if opcion_extra:
         st.success("Modo avanzado activado.")
